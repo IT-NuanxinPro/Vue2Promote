@@ -1,17 +1,24 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <router-view />
+  </div>
 </template>
 
 <script>
 export default {
   name: 'App',
-  components: {}
+  components: {},
+  obj: {
+    name: '12',
+    oage: 12
+  }
 };
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "PingFang SC", "苹方简" "Helvetica Neue", Helvetica,
+    "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
